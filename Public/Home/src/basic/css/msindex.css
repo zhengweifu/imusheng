@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Microsoft YaHei,Georgia,Serif;
+  font-weight: normal; }
+
+@media (min-width: 768px) {
+  .ms-logo {
+    margin-left: 100px; } }
+
+@media (max-width: 767px) {
+  .ms-logo {
+    margin-left: 15px; } }
+
+.msbanner {
+  position: relative;
+  overflow: auto; }
+  .msbanner > ul > li {
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 100%; }
+    .msbanner > ul > li > img {
+      max-width: 100%; }
+    .msbanner > ul > li .msbanner-introdution-group {
+      position: absolute;
+      top: 30%;
+      left: 30%; }
+      .msbanner > ul > li .msbanner-introdution-group .msbanner-introdution-title,
+      .msbanner > ul > li .msbanner-introdution-group .msbanner-introdution-content {
+        margin-bottom: 10px;
+        padding: 5px 10px; }
+      .msbanner > ul > li .msbanner-introdution-group .msbanner-introdution-title {
+        display: block; }
+      .msbanner > ul > li .msbanner-introdution-group .msbanner-introdution-content {
+        background-color: rgba(255, 255, 255, 0.3); }
+        .msbanner > ul > li .msbanner-introdution-group .msbanner-introdution-content span {
+          font-size: 18px; }
+  .msbanner .dots {
+    position: absolute;
+    left: 45%;
+    right: 0;
+    bottom: 20px; }
+    .msbanner .dots .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+      text-indent: -999em;
+      border: 2px solid #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      opacity: .4;
+      -webkit-transition: background .5s, opacity .5s;
+      -moz-transition: background .5s, opacity .5s;
+      transition: background .5s, opacity .5s; }
+    .msbanner .dots .active {
+      background: #ff8d5c;
+      opacity: 1; }
+  .msbanner .arrows {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    display: inline;
+    padding-left: 10px;
+    cursor: pointer; }
+
+#ms-product-label,
+#ms-introdution-label,
+#ms-about-label {
+  padding: 100px 0; }
+
+.ms-label-bg-gray {
+  background-color: #f4f4f4; }
+
+.ms-split {
+  border-bottom: 2px #000 solid; }
+
+.msproduct-group {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%; }
+  .msproduct-group img {
+    width: inherit; }
+  .msproduct-group div p, .msproduct-group div button {
+    margin: 10px 15px; }
+
+.ms-intr-g {
+  height: 300px; }
+  .ms-intr-g img {
+    margin: auto;
+    vertical-align: middle; }
+
+.size-30px {
+  font-size: 30px; }
+
+.size-24px {
+  font-size: 24px;
+  color: #ff8d5c; }
+
+.size-18px {
+  font-size: 18px; }
+
+.size-16px {
+  font-size: 16px; }
+
+.size-14px {
+  font-size: 14px; }
+
+.navbar-nav > li > a {
+  padding-top: 44.8px;
+  padding-bottom: 19.2px;
+  padding-left: 35px;
+  padding-right: 35px;
+  color: #fff !important; }
+
+.navbar-nav > .active > a {
+  background-color: #000 !important;
+  color: #777777 !important; }
+
+.navbar-default {
+  background-color: rgba(10, 154, 214, 0.95);
+  border-bottom: 2px solid #000; }
+
+.navbar-logo {
+  line-height: 84px; }
+
+.navbar-toggle {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.navbar-nav {
+  float: right; }
+
+.carousel-indicators .active {
+  background-color: #ff8d5c; }
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none; }
+
+@media (min-width: 1024px) {
+  .navbar-nav {
+    margin-right: 10%; } }
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0; }
+
+.carousel-caption {
+  padding-bottom: 60px; }
+  .carousel-caption .msbtn {
+    text-shadow: none; }
+
+.msbtn .glyphicon {
+  top: 4px; }

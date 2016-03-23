@@ -1,0 +1,281 @@
+.msbtn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; }
+
+.msbtn {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 18px;
+  font-weight: 400;
+  outline: none;
+  text-decoration: none; }
+
+.msbtn-orange {
+  border: 1px #ff8d5c solid;
+  background-color: #ff8d5c;
+  color: #fff; }
+  .msbtn-orange:hover {
+    text-decoration: none;
+    background-color: #ff6929;
+    color: #fff; }
+  .msbtn-orange:focus {
+    text-decoration: none; }
+
+.msbtn-green {
+  border: 1px #43b579 solid;
+  background-color: #43b579;
+  color: #fff; }
+  .msbtn-green:hover {
+    text-decoration: none;
+    background-color: #359060;
+    color: #fff; }
+  .msbtn-green:focus {
+    text-decoration: none; }
+
+.msbtn-blue {
+  border: 1px #178cd0 solid;
+  background-color: #178cd0;
+  color: #fff; }
+  .msbtn-blue:hover {
+    text-decoration: none;
+    background-color: #126da2;
+    color: #fff; }
+  .msbtn-blue:focus {
+    text-decoration: none; }
+
+.msnstSlider {
+  box-sizing: border-box;
+  width: 100%;
+  height: 16px;
+  position: relative; }
+  .msnstSlider :focus {
+    background-color: #777777; }
+  .msnstSlider .bar {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 100%;
+    height: 8px;
+    background-color: #e6e6e6;
+    border-radius: 4px; }
+  .msnstSlider .leftGrip {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #ff8d5c;
+    border-radius: 8px; }
+
+.msntSlider-group {
+  width: 100%;
+  height: 24px;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .msntSlider-group .msnstInput-g, .msntSlider-group .msnstSlider-g {
+    float: left !important;
+    height: 24px;
+    margin: 0;
+    padding-left: 2px;
+    padding-right: 2px; }
+  .msntSlider-group .msnstInput-g {
+    width: 25%; }
+    .msntSlider-group .msnstInput-g input {
+      width: 100%;
+      height: 100%; }
+  .msntSlider-group .msnstSlider-g {
+    width: 75%;
+    position: relative; }
+    .msntSlider-group .msnstSlider-g .msnstSlider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+
+.msnstLabel {
+  line-height: 44px; }
+
+.msnstLabel-2 {
+  line-height: 78px; }
+
+.msrow-padding-0 {
+  margin-left: -0px;
+  margin-right: -0px; }
+  .msrow-padding-0 [class*="col-"] {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+.msrow-padding-1 {
+  margin-left: -1px;
+  margin-right: -1px; }
+  .msrow-padding-1 [class*="col-"] {
+    padding-left: 1px;
+    padding-right: 1px; }
+
+.msrow-padding-2 {
+  margin-left: -2px;
+  margin-right: -2px; }
+  .msrow-padding-2 [class*="col-"] {
+    padding-left: 2px;
+    padding-right: 2px; }
+
+.msrow-padding-3 {
+  margin-left: -3px;
+  margin-right: -3px; }
+  .msrow-padding-3 [class*="col-"] {
+    padding-left: 3px;
+    padding-right: 3px; }
+
+.msrow-padding-4 {
+  margin-left: -4px;
+  margin-right: -4px; }
+  .msrow-padding-4 [class*="col-"] {
+    padding-left: 4px;
+    padding-right: 4px; }
+
+.msrow-padding-5 {
+  margin-left: -5px;
+  margin-right: -5px; }
+  .msrow-padding-5 [class*="col-"] {
+    padding-left: 5px;
+    padding-right: 5px; }
+
+.msrow-padding-6 {
+  margin-left: -6px;
+  margin-right: -6px; }
+  .msrow-padding-6 [class*="col-"] {
+    padding-left: 6px;
+    padding-right: 6px; }
+
+.msrow-padding-7 {
+  margin-left: -7px;
+  margin-right: -7px; }
+  .msrow-padding-7 [class*="col-"] {
+    padding-left: 7px;
+    padding-right: 7px; }
+
+.msrow-padding-8 {
+  margin-left: -8px;
+  margin-right: -8px; }
+  .msrow-padding-8 [class*="col-"] {
+    padding-left: 8px;
+    padding-right: 8px; }
+
+.msrow-padding-9 {
+  margin-left: -9px;
+  margin-right: -9px; }
+  .msrow-padding-9 [class*="col-"] {
+    padding-left: 9px;
+    padding-right: 9px; }
+
+.msrow-padding-10 {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .msrow-padding-10 [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+.msrow-padding-11 {
+  margin-left: -11px;
+  margin-right: -11px; }
+  .msrow-padding-11 [class*="col-"] {
+    padding-left: 11px;
+    padding-right: 11px; }
+
+.msrow-padding-12 {
+  margin-left: -12px;
+  margin-right: -12px; }
+  .msrow-padding-12 [class*="col-"] {
+    padding-left: 12px;
+    padding-right: 12px; }
+
+.msrow-padding-13 {
+  margin-left: -13px;
+  margin-right: -13px; }
+  .msrow-padding-13 [class*="col-"] {
+    padding-left: 13px;
+    padding-right: 13px; }
+
+.msrow-padding-14 {
+  margin-left: -14px;
+  margin-right: -14px; }
+  .msrow-padding-14 [class*="col-"] {
+    padding-left: 14px;
+    padding-right: 14px; }
+
+.msrow-padding-15 {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .msrow-padding-15 [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.msrow-padding-16 {
+  margin-left: -16px;
+  margin-right: -16px; }
+  .msrow-padding-16 [class*="col-"] {
+    padding-left: 16px;
+    padding-right: 16px; }
+
+.msrow-padding-17 {
+  margin-left: -17px;
+  margin-right: -17px; }
+  .msrow-padding-17 [class*="col-"] {
+    padding-left: 17px;
+    padding-right: 17px; }
+
+.msrow-padding-18 {
+  margin-left: -18px;
+  margin-right: -18px; }
+  .msrow-padding-18 [class*="col-"] {
+    padding-left: 18px;
+    padding-right: 18px; }
+
+.msrow-padding-19 {
+  margin-left: -19px;
+  margin-right: -19px; }
+  .msrow-padding-19 [class*="col-"] {
+    padding-left: 19px;
+    padding-right: 19px; }
+
+.msrow-padding-20 {
+  margin-left: -20px;
+  margin-right: -20px; }
+  .msrow-padding-20 [class*="col-"] {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+.ms-panel {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .ms-panel .ms-panel-title {
+    text-align: center;
+    padding: 5px 0; }
+    .ms-panel .ms-panel-title .label {
+      font-size: 14px;
+      color: #ff8d5c; }
+    .ms-panel .ms-panel-title .close {
+      font-size: 18px;
+      color: #ff8d5c;
+      opacity: 0.8; }
+
+.ms-panel-tri:before {
+  position: absolute;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ccc;
+  margin-top: -10px; }

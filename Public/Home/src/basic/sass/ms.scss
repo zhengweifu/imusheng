@@ -1,0 +1,178 @@
+
+@import "msvariables";
+@import "mixins/base.scss";
+
+@mixin msbtn-temp($bg-color, $color) {
+  //border: 1px darken($bg-color, 10%) solid;
+  border: 1px $bg-color solid;
+  background-color: $bg-color;
+  color: $color;
+  &:hover {
+    text-decoration: none;
+    background-color: darken($bg-color, 10%);
+    color: $color;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.msbtn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.msbtn {
+  //border: 1px solid tranparent;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 18px;
+  font-weight: 400;
+  outline:none;
+  text-decoration: none;
+  
+  //@include ms round(4px);
+  //@include msshadow(1px, 1px, 1px, 1px, rgba(0,0,0,0.2));
+}
+
+.msbtn-orange {
+  @include msbtn-temp($ms-btn-orange-bg, $ms-btn-orange-color);
+}
+
+.msbtn-green {
+  @include msbtn-temp($ms-btn-green-bg, $ms-btn-green-color);
+}
+
+.msbtn-blue {
+  @include msbtn-temp($ms-btn-blue-bg, $ms-btn-blue-color);
+}
+
+.msnstSlider {
+  box-sizing: border-box;
+  width: 100%;
+  height: $ms-nstslider-size-base * 2;
+  position: relative;
+
+  :focus {
+    background-color: $ms-gray-light;
+  }
+
+  .bar {
+    position: absolute;
+    left: 0;
+    top: $ms-nstslider-size-base / 2;
+    width: 100%;
+    height: $ms-nstslider-size-base;
+    background-color: darken($ms-btn-default-bg, 10%);
+    border-radius: $ms-nstslider-size-base/2;
+  }
+
+  .leftGrip {
+    position: absolute;
+    width: $ms-nstslider-size-base * 2;
+    height: $ms-nstslider-size-base * 2;
+    background-color: $ms-brand-orange;
+    border-radius: $ms-nstslider-size-base;
+    //margin-top: -$ms-nstslider-size-base/2;
+  }
+}
+
+.msntSlider-group {
+  width: 100%;
+  height: $ms-nstslider-size-base * 3;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-top: $ms-space-x2;
+  margin-bottom: $ms-space-x2;
+  .msnstInput-g, .msnstSlider-g {
+    float: left !important;
+    height: $ms-nstslider-size-base * 3;
+    margin: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .msnstInput-g {
+    width: 25%;
+    input {
+      width: 100%;
+      height: 100%;
+      //border: 1px solid $base-border-color;
+      //border-radius: 2px;
+    }
+  }
+  
+  .msnstSlider-g {
+    width: 75%;
+    position: relative;
+    .msnstSlider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+
+.msnstLabel {
+  line-height: $ms-nstslider-size-base * 3 + $ms-space-x2 * 2;
+}
+.msnstLabel-2 {
+  line-height: $ms-nstslider-size-base * 6 + $ms-space-x2 * 3;
+}
+
+@for $i from 0 to $msrow-padding-number+1 {
+  .msrow-padding-#{$i} {
+    margin-left: -#{$i}px;
+    margin-right: -#{$i}px;
+
+    [class*="col-"] {
+      padding-left: #{$i}px;
+      padding-right: #{$i}px;
+    }
+  }
+}
+
+.ms-panel {
+  border: 1px solid $ms-panel-default-border;
+  background-color: $ms-panel-default-bg;
+  padding-left: $ms-space-base;
+  padding-right: $ms-space-base;
+  .ms-panel-title {
+    text-align: center;
+    padding: $ms-space-base 0;
+    .label {
+      font-size: 14px;
+      color: $ms-brand-orange;
+    }
+
+    .close {
+      font-size: 18px;
+      color: $ms-brand-orange;
+      opacity: 0.8;
+    }
+  }
+}
+
+.ms-panel-tri {
+  &:before {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $ms-panel-default-border;
+    // left: 30px;
+    margin-top: -10px;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="static/nstSlider/css/jquery.nstSlider.min.css">-->
+    <link rel="stylesheet" href="Home/dist/basic/css/jx.min.css">
+    <script src="static/jquery-2.1.4.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="static/nstSlider/js/jquery.nstSlider.min.js"></script>
+</head>
+<body>
+<iframe src="http://www.3dcity.com/index/diy-jewelryeditall-cid-17.html" id="3dcity_diy_editor" frameborder="0" width="500" height="500"></iframe>
+
+<button id="_refresh">refresh</button>
+
+<script>
+(function() {
+    var iframe = document.getElementById('3dcity_diy_editor');
+    var innerDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+    console.log(innerDoc);
+    $("#_refresh").on('click', function () {
+        var ulObj = innerDoc.getElementById("web3dRing03Textvalue");
+        console.log(ulObj);
+    });
+})();
+</script>
+</body>
+</html>

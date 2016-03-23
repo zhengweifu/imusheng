@@ -1,0 +1,257 @@
+@import "msvariables";
+@import "mixins/base.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: Microsoft YaHei,Georgia,Serif;
+  font-weight:normal;
+}
+
+//p {
+//  color: $base_font_gray;
+//}
+
+@media (min-width: 768px) {
+  .ms-logo {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .ms-logo {
+    margin-left: 15px;
+  }
+}
+
+.msbanner {
+  position: relative;
+  overflow: auto;
+  //border-bottom: 2px red solid;
+  > ul {
+    > li {
+      position: relative;
+      list-style: none;
+      float: left;
+      width: 100%;
+      > img {
+        max-width:100%;
+      }
+      .msbanner-introdution-group {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        //z-index: 5;
+
+        .msbanner-introdution-title,
+        .msbanner-introdution-content {
+          margin-bottom: 10px;
+          padding: 5px 10px;
+        }
+
+        .msbanner-introdution-title {
+          display: block;
+        }
+        .msbanner-introdution-content {
+          background-color: rgba(255, 255, 255, 0.3);
+          span {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .dots {
+    position: absolute;
+    left: 45%;
+    right: 0;
+    bottom: 20px;
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+
+      text-indent: -999em;
+
+      border: 2px solid #fff;
+      border-radius: 6px;
+
+      cursor: pointer;
+      opacity: .4;
+
+      -webkit-transition: background .5s, opacity .5s;
+      -moz-transition: background .5s, opacity .5s;
+      transition: background .5s, opacity .5s;
+    }
+    .active {
+      background: $ms-brand-orange;
+      opacity: 1;
+    }
+
+  }
+
+  .arrows {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+
+    display: inline;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+}
+
+//.row {
+//  width: 200px;
+//  //text-align: center;
+//  margin: auto;
+//}
+#ms-product-label,
+#ms-introdution-label,
+#ms-about-label {
+  padding: 100px 0;
+}
+
+.ms-label-bg-gray {
+  background-color: $bg_gray;
+}
+
+.ms-split {
+  border-bottom: 2px $ms-gray-base solid;
+}
+
+.msproduct-group {
+  //display: inline-block;
+  //overflow: hidden;
+  margin-top: $ms-space-base;
+  margin-bottom: $ms-space-base;
+  //border: 2px $bg_gray solid;
+  width: 100%;
+
+  img {
+    width: inherit;
+  }
+  
+  div {
+    p,button {
+      margin: 10px 15px;
+    }
+  }
+}
+
+.ms-intr-g {
+  height: 300px;
+  img {
+    margin: auto;
+    vertical-align:middle;
+  }
+}
+
+.size-30px {
+  font-size: 30px;
+}
+
+.size-24px {
+  font-size: 24px;
+  color: $ms-brand-orange;
+}
+
+.size-18px {
+  font-size: 18px;
+}
+
+.size-16px {
+  font-size: 16px;
+}
+
+.size-14px {
+  font-size: 14px;
+  //line-height: 20px;
+}
+
+$msindex_navbar_height : 84px;
+$msindex_navbar_word_height : 20px;
+$msindex_logo_height : 42px;
+$msindex_navbar_button_height : 34px;
+$msindex_navbar_padding_lr : 35px;
+.navbar-nav>li>a {
+  padding-top: ($msindex_navbar_height - $msindex_navbar_word_height) * 0.7;
+  padding-bottom: ($msindex_navbar_height - $msindex_navbar_word_height) * 0.3;
+  padding-left: $msindex_navbar_padding_lr;
+  padding-right: $msindex_navbar_padding_lr;
+  color: #fff !important;
+}
+
+.navbar-nav {
+  > .active {
+    > a {
+      background-color: $ms-gray-base !important;
+      color: $ms-gray-light !important;
+    }
+  }
+}
+
+.navbar-default {
+  background-color: rgba(10, 154, 214, 0.95);
+  border-bottom: 2px solid $ms-gray-base;
+}
+
+.navbar-logo {
+  line-height: $msindex_navbar_height;
+}
+
+.navbar-toggle {
+  margin-top: ($msindex_navbar_height  - $msindex_navbar_button_height)/2;
+  margin-bottom: ($msindex_navbar_height  - $msindex_navbar_button_height)/2;
+}
+
+.navbar-nav {
+  float: right;
+  //margin-right: 10%;
+}
+
+.carousel-indicators {
+  .active {
+    background-color: $ms-brand-orange;
+  }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar-nav {
+    margin-right: 10%;
+  }
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+#ms-home-label {
+  //padding-top: $msindex_navbar_height;
+}
+
+.carousel-caption {
+  padding-bottom: 60px;
+
+  .msbtn {
+    text-shadow: none;
+  }
+}
+
+
+.msbtn .glyphicon {
+  top:  4px;
+}
+

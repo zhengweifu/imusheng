@@ -1,0 +1,47 @@
+// ms gray defined
+$ms-gray-base:              		#000 !default;
+$ms-gray-darker:            		lighten($ms-gray-base, 13.5%) !default; // #222
+$ms-gray-dark:              		lighten($ms-gray-base, 20%) !default;   // #333
+$ms-gray:                   		lighten($ms-gray-base, 33.5%) !default; // #555
+$ms-gray-light:             		lighten($ms-gray-base, 46.7%) !default; // #777
+$ms-gray-lighter:           		lighten($ms-gray-base, 93.5%) !default; // #eee
+
+// ms brand preview
+$ms-brand-orange: 					#ff8d5c !default;
+$ms-brand-green: 					#43b579 !default;
+$ms-brand-blue: 					#178cd0 !default;
+
+// set bootstrap row padding (left and right) size
+$msrow-padding-number: 				20;
+
+$ms-space-base: 					5px;
+$ms-space-x2: 						$ms-space-base * 2;
+$ms-space-x3: 						$ms-space-base * 3;
+$ms-space-x4: 						$ms-space-base * 3;
+
+// ms slider size
+$ms-nstslider-size-base: 			8px;
+
+
+$ms-active-bg-base: 				#a0aec3;
+
+// ms button paras
+$ms-btn-default-color:              #333 !default;
+$ms-btn-default-bg:                 #fff !default;
+$ms-btn-default-border:             #ccc !default;
+
+$ms-btn-orange-color:              	#fff !default;
+$ms-btn-orange-bg:                 	$ms-brand-orange !default;
+$ms-btn-orange-border:             	$ms-brand-orange !default;
+
+$ms-btn-green-color:              	#fff !default;
+$ms-btn-green-bg:                 	$ms-brand-green !default;
+$ms-btn-green-border:             	$ms-brand-green !default;
+
+$ms-btn-blue-color:              	#fff !default;
+$ms-btn-blue-bg:                 	$ms-brand-blue !default;
+$ms-btn-blue-border:             	$ms-brand-blue !default;
+
+// ms panel paras
+$ms-panel-default-bg:				#fff !default;
+$ms-panel-default-border:			#ccc !default;

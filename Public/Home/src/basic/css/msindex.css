@@ -6,6 +6,9 @@ body {
   font-family: Microsoft YaHei,Georgia,Serif;
   font-weight: normal; }
 
+p {
+  color: #333333; }
+
 @media (min-width: 768px) {
   .ms-logo {
     margin-left: 100px; } }
@@ -71,10 +74,13 @@ body {
 #ms-product-label,
 #ms-introdution-label,
 #ms-about-label {
-  padding: 100px 0; }
+  padding: 80px 0; }
 
 .ms-label-bg-gray {
   background-color: #f4f4f4; }
+
+#ms-about-label-g {
+  background-color: #333333; }
 
 .ms-split {
   border-bottom: 2px #000 solid; }
@@ -89,17 +95,21 @@ body {
     margin: 10px 15px; }
 
 .ms-intr-g {
+  margin: 10px 0;
   height: 300px; }
-  .ms-intr-g img {
-    margin: auto;
-    vertical-align: middle; }
+  .ms-intr-g .ms-img-g {
+    text-align: center; }
+    .ms-intr-g .ms-img-g img {
+      margin: auto;
+      vertical-align: middle; }
 
 .size-30px {
-  font-size: 30px; }
+  font-size: 30px;
+  color: #0a9ad6; }
 
 .size-24px {
   font-size: 24px;
-  color: #ff8d5c; }
+  color: #0a9ad6; }
 
 .size-18px {
   font-size: 18px; }
@@ -115,15 +125,16 @@ body {
   padding-bottom: 19.2px;
   padding-left: 35px;
   padding-right: 35px;
-  color: #fff !important; }
+  color: #fff !important;
+  font-size: 20px !important; }
 
 .navbar-nav > .active > a {
-  background-color: #000 !important;
-  color: #777777 !important; }
+  background-color: transparent !important;
+  color: #333333 !important; }
 
 .navbar-default {
-  background-color: rgba(10, 154, 214, 0.95);
-  border-bottom: 2px solid #000; }
+  background-color: #0a9ad6;
+  border-bottom: 2px solid #0a9ad6; }
 
 .navbar-logo {
   line-height: 84px; }
@@ -157,3 +168,14 @@ body {
 
 .msbtn .glyphicon {
   top: 4px; }
+
+.ms-footer-color {
+  color: #999; }
+  .ms-footer-color a {
+    color: #999;
+    text-decoration: none; }
+    .ms-footer-color a:hover {
+      color: #0a9ad6; }
+
+.ms-footer-title {
+  color: #eee; }

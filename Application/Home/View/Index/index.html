@@ -96,7 +96,7 @@
             <!--<a class="carousel-control right" href="#myCarousel"-->
             <!--data-slide="next">&rsaquo;</a>-->
         </div>
-        <div class="ms-split"></div>
+        <!--<div class="ms-split"></div>-->
     </div>
 
     <div class="container" id="ms-product-label">
@@ -109,10 +109,10 @@
                     <div>
                         <p class="size-30px">{$ms_product.labelheader}</p>
                         <p class="size-16px">{$ms_product.labelbody}</p>
-                        <a href="{$ms_product.link}" class="{$ms_product.buttonclassname}" role="button">
-                            马上体验
-                            <span class="glyphicon glyphicon-menu-right"></span>
-                        </a>
+                        <!--<a href="{$ms_product.link}" class="{$ms_product.buttonclassname}" role="button">-->
+                            <!--马上体验-->
+                            <!--<span class="glyphicon glyphicon-menu-right"></span>-->
+                        <!--</a>-->
                     </div>
                 </div>
             </div>
@@ -158,14 +158,16 @@
             <!--</div>-->
         </div>
     </div>
-    <div class="ms-split"></div>
+    <!--<div class="ms-split"></div>-->
 
     <div class="ms-label-bg-gray">
         <div class="container" id="ms-introdution-label">
         <div class="row">
             <div class="col-md-6">
                 <div class="ms-intr-g">
-                    <img src="__MSRESOURCE__/basic/imgs/tt01.png" alt="">
+                    <div class="ms-img-g">
+                        <img src="__MSRESOURCE__/basic/imgs/tt01.jpg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
@@ -195,36 +197,62 @@
                 </div>
             <div class="col-md-6">
                 <div class="ms-intr-g">
-                    <img src="__MSRESOURCE__/basic/imgs/tt02.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="ms-split"></div>
-    <img src="__MSRESOURCE__/basic/imgs/technological_process.jpg" alt="" style="max-width: 100%">
-    <div class="ms-split"></div>
-
-
-    <div class="ms-label-bg-gray">
-        <div class="container" id="ms-about-label">
-            <div class="row">
-                <div class="col-md-12">
-                    <div>
-                    <p class="size-18px">联系方式</p>
-                    <p><span class="glyphicon glyphicon-map-marker"></span>     上海市松江区莘砖公路518号漕河泾工业园</p>
-                    <p><span class="glyphicon glyphicon-earphone"></span>     18221425930 | 18521597226</p>
-                    <p><span class="glyphicon glyphicon-envelope"></span>     Janexi@21cn.com</p>
+                    <div class="ms-img-g">
+                        <img src="__MSRESOURCE__/basic/imgs/tt02.jpg" alt="">
                     </div>
                 </div>
-                <!-- <div class="col-md-6">
-                    <p  class="size-18px">合作伙伴</p>
-                </div> -->
             </div>
         </div>
     </div>
-    <div class="ms-split"></div>
-    <p style="margin: 5px 0; text-align: center;">© 2015-2018 简兮网络版权所有 沪ICP备05036958号</p>
+    </div>
+    <!--<div class="ms-split"></div>-->
+    <img src="__MSRESOURCE__/basic/imgs/technological_process.jpg" alt="" style="max-width: 100%">
+    <!--<div class="ms-split"></div>-->
+
+
+    <div id="ms-about-label-g">
+        <div class="container" id="ms-about-label">
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                    <p class="size-18px ms-footer-title">网 站</p>
+                    <p class="ms-footer-color"><a href="#ms-home-label">主页</a></p>
+                    <p class="ms-footer-color"><a>案列合集</a></p>
+                    <p class="ms-footer-color"><a>技术支持</a></p>
+                    <p class="ms-footer-color"><a href="#ms-about-label">关于我们</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        <p class="size-18px ms-footer-title">友情链接</p>
+                        <p class="ms-footer-color"><a  href="http://www.janexi.com">简兮网络</a></p>
+                        <p class="ms-footer-color"><a  href="http://www.janexi.com">曼恒数字技术</a></p>
+                        <p class="ms-footer-color"><a  href="http://www.janexi.com">上海木圣网络科技有限公司</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        <p class="size-18px ms-footer-title">联系我们</p>
+                        <p class="ms-footer-color">上海木圣网络科技有限公司</p>
+                        <p class="ms-footer-color"><span class="glyphicon glyphicon-map-marker"></span>     上海市合川路2679号A座3A楼</p>
+                        <p class="ms-footer-color"><span class="glyphicon glyphicon-earphone"></span>     18521597226</p>
+                        <p class="ms-footer-color"><span class="glyphicon glyphicon-envelope"></span>     wuchengwu@imusheng.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div style="margin-top: 30px">
+                        <p><img src="__MSRESOURCE__/basic/imgs/logo_b.png" alt=""></p>
+                        <p class="ms-footer-color">© 2015-2018 简兮网络版权所有 沪ICP备15055151号－1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="ms-split"></div>-->
+    <!--<p style="margin: 5px 0; text-align: center;">© 2015-2018 简兮网络版权所有 沪ICP备15055151号－1</p>-->
 
     <script>
         $('body').scrollspy({ target: '#myScrollspy' });

@@ -12,6 +12,10 @@ body {
   font-weight:normal;
 }
 
+p {
+  color: $ms-gray-dark;
+}
+
 //p {
 //  color: $base_font_gray;
 //}
@@ -115,11 +119,15 @@ body {
 #ms-product-label,
 #ms-introdution-label,
 #ms-about-label {
-  padding: 100px 0;
+  paddin0px 0;
 }
 
 .ms-label-bg-gray {
   background-color: $bg_gray;
+}
+
+#ms-about-label-g {
+  background-color: $ms-gray-dark;
 }
 
 .ms-split {
@@ -146,20 +154,25 @@ body {
 }
 
 .ms-intr-g {
+  margin: 10px 0;
   height: 300px;
-  img {
-    margin: auto;
-    vertical-align:middle;
+  .ms-img-g {
+    text-align: center;
+    img {
+      margin: auto;
+      vertical-align:middle;
+    }
   }
 }
 
 .size-30px {
   font-size: 30px;
+  color: $ms-blue-base;
 }
 
 .size-24px {
   font-size: 24px;
-  color: $ms-brand-orange;
+  color: $ms-blue-base;
 }
 
 .size-18px {
@@ -186,20 +199,21 @@ $msindex_navbar_padding_lr : 35px;
   padding-left: $msindex_navbar_padding_lr;
   padding-right: $msindex_navbar_padding_lr;
   color: #fff !important;
+  font-size: 20px !important;
 }
 
 .navbar-nav {
   > .active {
     > a {
-      background-color: $ms-gray-base !important;
-      color: $ms-gray-light !important;
+      background-color: transparent !important;
+      color: $ms-gray-dark !important;
     }
   }
 }
 
 .navbar-default {
-  background-color: rgba(10, 154, 214, 0.95);
-  border-bottom: 2px solid $ms-gray-base;
+  background-color: $ms-blue-base;
+  border-bottom: 2px solid $ms-blue-base;
 }
 
 .navbar-logo {
@@ -253,5 +267,20 @@ $msindex_navbar_padding_lr : 35px;
 
 .msbtn .glyphicon {
   top:  4px;
+}
+
+.ms-footer-color {
+  color: #999;
+  a {
+    color: #999;
+    text-decoration: none;
+    &:hover {
+      color: $ms-blue-base;
+    }
+  }
+}
+
+.ms-footer-title {
+  color: #eee;
 }
 
